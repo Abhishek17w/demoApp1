@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 import org.springframework.data.annotation.Id;
 
@@ -14,6 +15,8 @@ public class Item {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "item_id", referencedColumnName = "id")
 	private Long id;
 	
 	@ManyToOne(cascade = CascadeType.ALL)

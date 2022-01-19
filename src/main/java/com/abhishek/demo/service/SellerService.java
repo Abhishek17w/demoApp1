@@ -1,12 +1,14 @@
 package com.abhishek.demo.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.abhishek.demo.entity.Deal;
 import com.abhishek.demo.entity.Seller;
 import com.abhishek.demo.repository.DealRepository;
 import com.abhishek.demo.repository.SellerRepository;
 
+@Service
 public class SellerService {
 
 	@Autowired

@@ -1,6 +1,7 @@
 package com.abhishek.demo.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.abhishek.demo.entity.Deal;
 import com.abhishek.demo.entity.Order;
@@ -9,6 +10,7 @@ import com.abhishek.demo.entity.User;
 import com.abhishek.demo.repository.DealRepository;
 import com.abhishek.demo.repository.UserRepository;
 
+@Service
 public class UserService {
 
 	@Autowired
